@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
     <div id="header">
@@ -12,10 +13,10 @@
             <nav>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKnNgDRxsuMbAc1G6haQSowk7lGVwieBsGqQ&usqp=CAU" class="logo">
                 <ul>
-                    <li><a href ="#">Home</a></li>
-                    <li><a href ="#">About</a></li>
-                    <li><a href ="#">Projects</a></li>
-                    <li><a href ="#">Contact</a></li>
+                    <li><a href ="#header">Home</a></li>
+                    <li><a href ="#About">About</a></li>
+                    <li><a href ="#Projects">Projects</a></li>
+                    <li><a href ="#Contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-content"></div>
@@ -100,21 +101,21 @@
                     <img src="../Images/My-pic.jpeg">
                     <div class="layer">
                         <h3>Portfolio Website</h3>
-                        <a href="#"></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="project-work">
                     <img src="../Images/My-pic.jpeg">
                     <div class="layer">
                         <h3>Netflix front-end Clone</h3>
-                        <a href="#"></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="project-work">
                     <img src="../Images/My-pic.jpeg">
                     <div class="layer">
                         <h3>Keeper App</h3>
-                        <a href="#"></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -123,6 +124,28 @@
 
     <!-- ------Contact------ -->
 
+    <div id="Contact">
+        <div class="container">
+            <h1 class="sub">My Contact</h1>
+            <div class="contact-details">
+                <p><i class="fa-regular fa-envelope"></i>laavanya113@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>9876543201</p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/laavanya-yadav-316ab9211/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/laavanya11"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/_laavanya_yadav_/"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div>
+                    <a href="https://drive.google.com/file/d/1iQY-paoCiF2BJtd-DbFFQQ_K_LFFdP2v/view?usp=sharing" download class="btn">Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Laavanya</p>
+        </div>
+    </div>
+
+    <!-----javascript----->
     <script>
         var tablinks=document.getElementsByClassName("tab-links");
         var tabcontents=document.getElementsByClassName("tab-contents");
