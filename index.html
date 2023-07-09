@@ -23,8 +23,91 @@
             <h1>Hi!</h1>
             <h1>I'm <span>Laavanya Yadav</span></h1>
         </div>
-
     </div>
-    
+    <!------about------>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-part1">
+                    <img src="../Images/My-pic.jpeg">
+                </div>
+                <div class="about-part2">
+                    <h1 class="sub">About Me</h1>
+                    <p>
+                        As a web developer and C++ programmer, I bring a versatile skill set with a 
+                        passion for creating innovative solutions. I have a deep understanding of 
+                        web development technologies such as HTML5, CSS3, JavaScript, and front-end 
+                        frameworks like React.js. My expertise extends to C++ programming, where I 
+                        have developed efficient and robust applications. I possess strong 
+                        problem-solving skills, attention to detail, and a dedication to delivering 
+                        high-quality work. With a strong focus on meeting deadlines and 
+                        collaborating effectively with teams, I thrive in fast-paced environments 
+                        and enjoy keeping up with the latest industry trends. My goal is to 
+                        contribute my technical proficiency and creativity to develop cutting-edge 
+                        web applications and software solutions.
+                    </p>
+                    <div class="tabs">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('softskills')">Soft Skills</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>C,C++</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React.js</li>
+                            <li>DSA</li>
+                            <li>Competitive Programming</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="softskills">
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Time Management</li>
+                            <li>Continuous Learning</li>
+                            <li>Adaptability</li>
+                            <li>Creativity</li>
+                            <li>Leadership</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>2020-current</span><br>B.tech from Ajay Kumar Garg Engineering College,Ghaziabad</li>
+                            <li><span>2020</span><br>Intermediate from St. Mary's Sen. Sec. School,Moradabad </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            //for(variable 'of' object)
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+        
 </body>
 </html>
